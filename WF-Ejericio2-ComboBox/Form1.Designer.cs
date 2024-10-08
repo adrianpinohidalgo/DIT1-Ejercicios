@@ -31,10 +31,10 @@
             this.rbWindows = new System.Windows.Forms.RadioButton();
             this.rbLinux = new System.Windows.Forms.RadioButton();
             this.rbMac = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbSO = new System.Windows.Forms.GroupBox();
             this.cbSoftware = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.gbSO.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbWindows
@@ -70,17 +70,17 @@
             this.rbMac.UseVisualStyleBackColor = true;
             this.rbMac.CheckedChanged += new System.EventHandler(this.rbMac_CheckedChanged);
             // 
-            // groupBox1
+            // gbSO
             // 
-            this.groupBox1.Controls.Add(this.rbMac);
-            this.groupBox1.Controls.Add(this.rbLinux);
-            this.groupBox1.Controls.Add(this.rbWindows);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Sistemas Operativos";
+            this.gbSO.Controls.Add(this.rbMac);
+            this.gbSO.Controls.Add(this.rbLinux);
+            this.gbSO.Controls.Add(this.rbWindows);
+            this.gbSO.Location = new System.Drawing.Point(12, 12);
+            this.gbSO.Name = "gbSO";
+            this.gbSO.Size = new System.Drawing.Size(200, 100);
+            this.gbSO.TabIndex = 1;
+            this.gbSO.TabStop = false;
+            this.gbSO.Text = "Sistemas Operativos";
             // 
             // cbSoftware
             // 
@@ -107,11 +107,11 @@
             this.ClientSize = new System.Drawing.Size(414, 126);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbSoftware);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbSO);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbSO.ResumeLayout(false);
+            this.gbSO.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,7 +121,7 @@
         private System.Windows.Forms.RadioButton rbLinux;
         private System.Windows.Forms.RadioButton rbWindows;
         private System.Windows.Forms.RadioButton rbMac;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbSO;
         private System.Windows.Forms.ComboBox cbSoftware;
         private System.Windows.Forms.Label label1;
     }

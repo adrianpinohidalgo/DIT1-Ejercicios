@@ -45,7 +45,7 @@ namespace WF_Ejericio2_ComboBox
         private void cbSoftware_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbSoftware.SelectedIndex != -1)
-                MessageBox.Show("SO seleccionado: " + rbWindows.Text + " | Software seleccionado: " + cbSoftware.Text);
+                MessageBox.Show("SO seleccionado: " + (rbWindows.Checked ? "Windows" : rbLinux.Checked ? "Linux" : "Mac") + " | Software seleccionado: " + cbSoftware.Text);
         }
     }
 }

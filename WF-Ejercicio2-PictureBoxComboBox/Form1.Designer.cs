@@ -40,7 +40,9 @@
             this.btnMenosAlto = new System.Windows.Forms.Button();
             this.btnMasAlto = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelImage = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelImage.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnArriba
@@ -145,18 +147,26 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(204, 182);
+            this.pictureBox1.Location = new System.Drawing.Point(181, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(134, 104);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
+            // panelImage
+            // 
+            this.panelImage.Controls.Add(this.pictureBox1);
+            this.panelImage.Location = new System.Drawing.Point(46, 157);
+            this.panelImage.Name = "panelImage";
+            this.panelImage.Size = new System.Drawing.Size(479, 260);
+            this.panelImage.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(561, 450);
+            this.Controls.Add(this.panelImage);
             this.Controls.Add(this.btnMenosAlto);
             this.Controls.Add(this.btnMasAlto);
             this.Controls.Add(this.btnMenosAncho);
@@ -170,6 +180,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelImage.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,6 +199,7 @@
         private System.Windows.Forms.Button btnMenosAlto;
         private System.Windows.Forms.Button btnMasAlto;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panelImage;
     }
 }
 
