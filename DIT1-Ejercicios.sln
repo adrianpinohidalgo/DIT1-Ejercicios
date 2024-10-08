@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio1-Abstraccion", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio2-Gimnasio", "Ejercicio2-Gimnasio\Ejercicio2-Gimnasio.csproj", "{B4008C4B-F4C5-4B44-AE32-DC83ADCBE8C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF-Ejercicio2-PictureBox", "WF-Ejercicio2-PictureBoxComboBox\WF-Ejercicio2-PictureBox.csproj", "{A72AAE8E-DAAF-4D50-9FBA-1D7DC1917933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF-Ejericio2-ComboBox", "WF-Ejericio2-ComboBox\WF-Ejericio2-ComboBox.csproj", "{0CEC5775-406A-4560-856C-523F548411CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B4008C4B-F4C5-4B44-AE32-DC83ADCBE8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4008C4B-F4C5-4B44-AE32-DC83ADCBE8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4008C4B-F4C5-4B44-AE32-DC83ADCBE8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A72AAE8E-DAAF-4D50-9FBA-1D7DC1917933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A72AAE8E-DAAF-4D50-9FBA-1D7DC1917933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A72AAE8E-DAAF-4D50-9FBA-1D7DC1917933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A72AAE8E-DAAF-4D50-9FBA-1D7DC1917933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CEC5775-406A-4560-856C-523F548411CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEC5775-406A-4560-856C-523F548411CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CEC5775-406A-4560-856C-523F548411CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CEC5775-406A-4560-856C-523F548411CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
