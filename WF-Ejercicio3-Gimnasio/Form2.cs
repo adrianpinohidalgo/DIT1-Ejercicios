@@ -28,9 +28,35 @@ namespace WF_Ejercicio3_Gimnasio
             InitializeComponent();
         }
 
+        private void limpiarCampos()
+        {
+            tbCodigo.Enabled = true;
+            tbCodigo.Clear();
+            tbNombre.Clear();
+            tbApellidos.Clear();
+            dtpFecha.Value = DateTime.Now;
+            cbCiudad.SelectedIndex = 0;
+            tbTelefono.Clear();
+        }
+
+        private void habilitarBotones()
+        {
+            btnAnadir.Enabled = true;
+            btnModificar.Enabled = true;
+            btnEliminar.Enabled = true;
+            btnGuardar.Enabled = true;
+            btnCargar.Enabled = true;
+        }
+
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.form1.Show();
+        }
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            cbCiudad.DataSource = ciudades;
+            bindingSource1.DataSource = clientes;
+            dataGridView1.DataSource = bindingSource1;
         }
 
         private void btnAnadir_Click(object sender, EventArgs e)
@@ -60,16 +86,11 @@ namespace WF_Ejercicio3_Gimnasio
             else
             {
                 MessageBox.Show("Por favor, rellena todos los campos", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-
+            limpiarCampos();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            cbCiudad.DataSource = ciudades;
-            bindingSource1.DataSource = clientes;
-            dataGridView1.DataSource = bindingSource1;
-        }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
@@ -92,17 +113,8 @@ namespace WF_Ejercicio3_Gimnasio
                             bindingSource1.ResetBindings(false);
                         }
 
-                        tbCodigo.Clear();
-                        tbNombre.Clear();
-                        tbApellidos.Clear();
-                        dtpFecha.Value = DateTime.Now;
-                        cbCiudad.SelectedIndex = 0;
-                        tbTelefono.Clear();
-
-                        btnAnadir.Enabled = true;
-                        btnModificar.Enabled = true;
-                        btnGuardar.Enabled = true;
-                        btnCargar.Enabled = true;
+                        limpiarCampos();
+                        habilitarBotones();
                     }
                     else
                     {
@@ -152,27 +164,13 @@ namespace WF_Ejercicio3_Gimnasio
 
                             bindingSource1.ResetBindings(false);
 
-                            btnAnadir.Enabled = true;
-                            btnModificar.Enabled = true;
-                            btnEliminar.Enabled = true;
-                            btnGuardar.Enabled = true;
-                            btnCargar.Enabled = true;
+                            limpiarCampos();
+                            habilitarBotones();
                         }
                         else
                         {
-                            tbCodigo.Enabled = true;
-                            tbCodigo.Clear();
-                            tbNombre.Clear();
-                            tbApellidos.Clear();
-                            dtpFecha.Value = DateTime.Now;
-                            cbCiudad.SelectedIndex = 0;
-                            tbTelefono.Clear();
-
-                            btnAnadir.Enabled = true;
-                            btnModificar.Enabled = true;
-                            btnEliminar.Enabled = true;
-                            btnGuardar.Enabled = true;
-                            btnCargar.Enabled = true;
+                            limpiarCampos();
+                            habilitarBotones();
                         }
                     }
                     else
@@ -198,24 +196,12 @@ namespace WF_Ejercicio3_Gimnasio
             }
         }
 
-        private void tbCodigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
 
-        private void tbTelefono_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-        }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            limpiarCampos();
+
             string fileName = $"clientes.json";
             string jsonString = JsonSerializer.Serialize(clientes);
             try
@@ -231,12 +217,7 @@ namespace WF_Ejercicio3_Gimnasio
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
-            tbCodigo.Clear();
-            tbNombre.Clear();
-            tbApellidos.Clear();
-            dtpFecha.Value = DateTime.Now;
-            cbCiudad.SelectedIndex = 0;
-            tbTelefono.Clear();
+            limpiarCampos();
 
             bindingSource1.Clear();
             string fileName = $"clientes.json";
@@ -251,6 +232,22 @@ namespace WF_Ejercicio3_Gimnasio
             catch (Exception ex)
             {
                 MessageBox.Show("Ocurrio un error al intentar cargar: " + ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void tbTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

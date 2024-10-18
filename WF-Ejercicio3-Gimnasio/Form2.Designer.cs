@@ -79,9 +79,9 @@
             this.groupBox1.Controls.Add(this.tbCodigo);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(15, 17);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(904, 256);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -91,7 +91,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(540, 25);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(357, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -101,7 +101,7 @@
             // btnCargar
             // 
             this.btnCargar.Location = new System.Drawing.Point(377, 201);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(122, 30);
             this.btnCargar.TabIndex = 18;
@@ -112,7 +112,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(377, 163);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(122, 30);
             this.btnGuardar.TabIndex = 17;
@@ -123,7 +123,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(377, 103);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(122, 52);
             this.btnEliminar.TabIndex = 16;
@@ -134,7 +134,7 @@
             // btnModificar
             // 
             this.btnModificar.Location = new System.Drawing.Point(377, 65);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(122, 30);
             this.btnModificar.TabIndex = 15;
@@ -145,7 +145,7 @@
             // btnAnadir
             // 
             this.btnAnadir.Location = new System.Drawing.Point(377, 25);
-            this.btnAnadir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAnadir.Margin = new System.Windows.Forms.Padding(4);
             this.btnAnadir.Name = "btnAnadir";
             this.btnAnadir.Size = new System.Drawing.Size(122, 30);
             this.btnAnadir.TabIndex = 14;
@@ -157,7 +157,7 @@
             // 
             this.cbCiudad.FormattingEnabled = true;
             this.cbCiudad.Location = new System.Drawing.Point(88, 171);
-            this.cbCiudad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbCiudad.Margin = new System.Windows.Forms.Padding(4);
             this.cbCiudad.Name = "cbCiudad";
             this.cbCiudad.Size = new System.Drawing.Size(140, 25);
             this.cbCiudad.TabIndex = 13;
@@ -165,7 +165,7 @@
             // dtpFecha
             // 
             this.dtpFecha.Location = new System.Drawing.Point(88, 135);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(233, 25);
             this.dtpFecha.TabIndex = 12;
@@ -173,7 +173,7 @@
             // tbTelefono
             // 
             this.tbTelefono.Location = new System.Drawing.Point(88, 208);
-            this.tbTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.tbTelefono.MaxLength = 9;
             this.tbTelefono.Name = "tbTelefono";
             this.tbTelefono.Size = new System.Drawing.Size(116, 25);
@@ -213,7 +213,7 @@
             // tbApellidos
             // 
             this.tbApellidos.Location = new System.Drawing.Point(88, 98);
-            this.tbApellidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbApellidos.Margin = new System.Windows.Forms.Padding(4);
             this.tbApellidos.Name = "tbApellidos";
             this.tbApellidos.Size = new System.Drawing.Size(116, 25);
             this.tbApellidos.TabIndex = 5;
@@ -231,7 +231,7 @@
             // tbNombre
             // 
             this.tbNombre.Location = new System.Drawing.Point(88, 61);
-            this.tbNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(4);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(116, 25);
             this.tbNombre.TabIndex = 3;
@@ -249,10 +249,11 @@
             // tbCodigo
             // 
             this.tbCodigo.Location = new System.Drawing.Point(88, 25);
-            this.tbCodigo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbCodigo.Margin = new System.Windows.Forms.Padding(4);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(116, 25);
             this.tbCodigo.TabIndex = 1;
+            this.tbCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbCodigo_KeyPress);
             // 
             // label1
             // 
@@ -279,7 +280,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(15, 341);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -295,7 +296,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form2";
             this.Text = "GESTIÓN CLIENTES GIMNASIO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
