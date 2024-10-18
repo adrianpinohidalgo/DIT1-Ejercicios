@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF-Ejercicio2-PictureBox", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF-Ejericio2-ComboBox", "WF-Ejericio2-ComboBox\WF-Ejericio2-ComboBox.csproj", "{0CEC5775-406A-4560-856C-523F548411CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WF-Ejercicio3-Gimnasio", "WF-Ejercicio3-Gimnasio\WF-Ejercicio3-Gimnasio.csproj", "{FB536FCD-8E1B-4B53-9F69-E5BAAA79F730}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0CEC5775-406A-4560-856C-523F548411CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CEC5775-406A-4560-856C-523F548411CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CEC5775-406A-4560-856C-523F548411CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB536FCD-8E1B-4B53-9F69-E5BAAA79F730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB536FCD-8E1B-4B53-9F69-E5BAAA79F730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB536FCD-8E1B-4B53-9F69-E5BAAA79F730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB536FCD-8E1B-4B53-9F69-E5BAAA79F730}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
